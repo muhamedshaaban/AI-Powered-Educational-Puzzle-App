@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../../widgets/splash_crads_grid.dart';
+import 'welcome_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -94,21 +95,29 @@ class _SplashScreenState extends State<SplashScreen>
                     fontFamily: 'PoetsenOne',
                   ),
                 ),
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.white.withOpacity(0.5),
-                    border: Border.all(
-                      color: const Color(0xff5E11B5),
-                      width: 4,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WelcomeScreen()));
+                  },
+                  child: Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white.withOpacity(0.5),
+                      border: Border.all(
+                        color: const Color(0xff5E11B5),
+                        width: 4,
+                      ),
                     ),
-                  ),
-                  child: const Icon(
-                    Icons.child_care,
-                    size: 50,
-                    color: Color(0xff5E11B5),
+                    child: const Icon(
+                      Icons.child_care,
+                      size: 50,
+                      color: Color(0xff5E11B5),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 20),

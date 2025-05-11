@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_app/helper/helper.dart';
-import '../screens/onboarding/teacher_or_child_screen.dart';
+import 'teacher_or_child/teacher_or_child_screen.dart';
 
 class WelcomeScreenBottomWidget extends StatelessWidget {
   const WelcomeScreenBottomWidget({super.key});

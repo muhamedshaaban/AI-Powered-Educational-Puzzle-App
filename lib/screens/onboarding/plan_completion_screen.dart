@@ -3,7 +3,7 @@ import 'dart:math';
 
 import 'package:graduation_app/helper/helper.dart';
 
-import '../registeration/child_name_screen.dart';
+import '../registeration/child/child_name_screen.dart';
 
 class PlanCompletionScreen extends StatelessWidget {
   final Random _random = Random();

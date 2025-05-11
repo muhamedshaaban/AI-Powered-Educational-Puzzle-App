@@ -13,7 +13,7 @@ class CustomTextFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 343,
+      width: double.infinity,
       child: TextFormField(
           decoration: InputDecoration(
         prefixIcon: prefixIocn,
